@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #b3e787, #6ea957);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 6em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  }
+  
+  p {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+
+  .rounded-box {
+    background-color: rgba(0, 50, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation: move 10s infinite linear;
+    opacity: 0.6;
+  }
+
+  .circle:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .circle:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 20%;
+    animation-delay: 2s;
+  }
+
+  .circle:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    top: 80%;
+    left: 80%;
+    animation-delay: 4s;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(20px, 20px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="circles">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+
+<div class="container">
+  <div class="rounded-box">
+    <h1>Coming Soon</h1>
+    <p>Get ready for something amazing!</p>
+  </div>
+</div>
+
+</body>
+</html>
